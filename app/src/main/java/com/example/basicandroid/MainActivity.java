@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.button);
+        Button button = findViewById(R.id.button_permission);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,6 +90,25 @@ public class MainActivity extends AppCompatActivity {
             requestPermissionLauncher.launch(Manifest.permission.CAMERA);
             Log.d("","");
         }
+    }
+
+    public void exampleImplicitIntentActionView(View view){
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://www.bca.co.id/id/individu"));
+        startActivity(i);
+    }
+
+    public void exampleImplicitIntentActionDial(View view){
+        Intent i = new Intent(Intent.ACTION_DIAL);
+        i.setData(Uri.parse("tel:1500888"));
+        startActivity(i);
+    }
+
+    public void exampleImplicitIntentActionSendTO(View view){
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        // The intent does not have a URI, so declare the "text/plain" MIME type
+        emailIntent.setData(Uri.parse("mailto:halobca@bca.co.id"));
+        startActivity(Intent.createChooser(emailIntent, "Send email..."));
     }
 
 }
