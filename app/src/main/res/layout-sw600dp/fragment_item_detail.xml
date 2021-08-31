@@ -12,5 +12,5 @@
         android:layout_height="match_parent"
         android:padding="16dp"
         android:textIsSelectable="true"
-        tools:context="com.example.basicandroid.ItemDetailFragment" />
+        tools:context="com.example.basicandroid.day2.ItemDetailFragment" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

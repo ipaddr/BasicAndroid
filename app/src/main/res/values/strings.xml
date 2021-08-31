@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">BasicAndroid</string>
     <string name="title_item_detail">Item Detail</string>
+
+    <!-- Day 3 -->
+    <string name="day3">Day 3</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="base_adapter">Base Adapter</string>
 </resources>

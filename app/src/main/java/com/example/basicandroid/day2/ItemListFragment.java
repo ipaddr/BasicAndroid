@@ -1,4 +1,4 @@
-package com.example.basicandroid;
+package com.example.basicandroid.day2;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
@@ -17,10 +17,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.basicandroid.R;
 import com.example.basicandroid.databinding.FragmentItemListBinding;
 import com.example.basicandroid.databinding.ItemListContentBinding;
 
-import com.example.basicandroid.placeholder.PlaceholderContent;
+import com.example.basicandroid.day2.placeholder.PlaceholderContent;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.basicandroid;
+package com.example.basicandroid.day2;
 
 import android.content.ClipData;
 import android.os.Bundle;
@@ -11,8 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.basicandroid.R;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.example.basicandroid.placeholder.PlaceholderContent;
+import com.example.basicandroid.day2.placeholder.PlaceholderContent;
 import com.example.basicandroid.databinding.FragmentItemDetailBinding;
 
 /**

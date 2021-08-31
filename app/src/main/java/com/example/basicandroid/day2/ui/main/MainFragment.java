@@ -1,6 +1,4 @@
-package com.example.basicandroid.ui.main;
-
-import androidx.lifecycle.ViewModelProvider;
+package com.example.basicandroid.day2.ui.main;
 
 import android.os.Bundle;
 

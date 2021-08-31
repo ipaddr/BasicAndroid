@@ -1,4 +1,4 @@
-package com.example.basicandroid.placeholder;
+package com.example.basicandroid.day2.placeholder;
 
 import java.util.ArrayList;
 import java.util.HashMap;

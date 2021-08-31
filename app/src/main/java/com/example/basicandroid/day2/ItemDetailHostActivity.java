@@ -1,4 +1,4 @@
-package com.example.basicandroid;
+package com.example.basicandroid.day2;
 
 import android.os.Bundle;
 
@@ -9,6 +9,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.basicandroid.R;
 import com.example.basicandroid.databinding.ActivityItemDetailBinding;
 
 public class ItemDetailHostActivity extends AppCompatActivity {
