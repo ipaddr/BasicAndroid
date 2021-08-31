@@ -17,6 +17,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.basicandroid.ui.main.SampleFragmentActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     // Register the permissions callback, which handles the user's response to the
@@ -109,5 +111,10 @@ public class MainActivity extends AppCompatActivity {
         // The intent does not have a URI, so declare the "text/plain" MIME type
         emailIntent.setData(Uri.parse("mailto:halobca@bca.co.id"));
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
+    }
+
+    public void startActivityWithFragment(View view){
+        Intent intent = new Intent(MainActivity.this, SampleFragmentActivity.class);
+        startActivity(intent);
     }
 }
