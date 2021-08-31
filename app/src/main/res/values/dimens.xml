@@ -7,4 +7,6 @@
     <dimen name="container_margin">8dp</dimen>
     <dimen name="container_horizontal_margin">16dp</dimen>
     <dimen name="widget_margin">4dp</dimen>
+    <dimen name="android_icon_height">100dp</dimen>
+    <dimen name="android_icon_text_size">24sp</dimen>
 </resources>
