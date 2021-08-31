@@ -110,5 +110,4 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.setData(Uri.parse("mailto:halobca@bca.co.id"));
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
     }
-
 }
