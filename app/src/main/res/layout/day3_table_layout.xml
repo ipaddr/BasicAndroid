@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:background="@drawable/border">
+        <TextView
+            android:text="@string/text1"
+            android:textSize="@dimen/android_icon_text_size"/>
+        <TextView
+            android:text="@string/text2"
+            android:textSize="@dimen/android_icon_text_size"/>
+        <TextView
+            android:text="@string/text3"
+            android:textSize="@dimen/android_icon_text_size"/>
+        <TextView
+            android:text="@string/text4"
+            android:textSize="@dimen/android_icon_text_size"/>
+        <TextView
+            android:text="@string/text5"
+            android:textSize="@dimen/android_icon_text_size"/>
+    </TableRow>
+
+    <TableRow
+        android:background="@drawable/border">
+        <TextView
+            android:gravity="center"
+            android:layout_span="3"
+            android:background="@drawable/border"
+            android:text="@string/text1"
+            android:textSize="@dimen/android_icon_text_size"/>
+        <TextView
+            android:gravity="center"
+            android:layout_span="2"
+            android:background="@drawable/border"
+            android:text="@string/text2"
+            android:textSize="@dimen/android_icon_text_size"/>
+    </TableRow>
+
+</TableLayout>

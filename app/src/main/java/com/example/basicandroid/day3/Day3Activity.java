@@ -47,4 +47,11 @@ public class Day3Activity extends AppCompatActivity {
                 .replace(R.id.day3_container, LinearLayoutFragment.newInstance())
                 .commitNow();
     }
+
+    public void tableLayout(View view){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.day3_container, TableLayoutFragment.newInstance())
+                .commitNow();
+    }
 }
