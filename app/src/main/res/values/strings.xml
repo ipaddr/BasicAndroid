@@ -2,6 +2,17 @@
     <string name="app_name">BasicAndroid</string>
     <string name="title_item_detail">Item Detail</string>
 
+    <!-- Global Use -->
+    <string name="text1">Text 1</string>
+    <string name="text2">Text 2</string>
+    <string name="text3">Text 3</string>
+    <string name="text4">Text 4</string>
+    <string name="text5">Text 5</string>
+    <string name="text6">Text 6</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
     <!-- Day 3 -->
     <string name="day3">Day 3</string>
     <string name="relative_layout">Relative Layout</string>
@@ -10,4 +21,5 @@
     <string name="grid_layout">Grid Layout</string>
     <string name="constraint_layout">Constraint Layout</string>
     <string name="base_adapter">Base Adapter</string>
+
 </resources>
