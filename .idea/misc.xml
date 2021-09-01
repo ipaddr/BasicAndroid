@@ -6,21 +6,34 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/drawable/border.xml" value="0.2203125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/activity_day3.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/activity_day_2.xml" value="0.1634963768115942" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/activity_every_day.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/activity_item_detail.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/activity_sample_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_constrain_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_grid_layout.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_linear_layout.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_list_view.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_list_view_row_item.xml" value="0.15307971014492755" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_relative_layout.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_relative_layout.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day3_table_layout.xml" value="0.15307971014492755" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_dialog_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_main_fragment.xml" value="0.15307971014492755" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_nested_scroll_view.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_nested_scroll_view_content_scroll_layout.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_nested_scroll_view_section_scroll_layout.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_recyclerview_container.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_recyclerview_item.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_tab_host.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_tab_host_content.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/day4_web_view.xml" value="0.17798913043478262" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/fragmant_day3_main.xml" value="0.1634963768115942" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/fragmant_main_day3.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/fragment_item_detail.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/main_fragment.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/main_sample_fragment.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/layout/sample.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BasicAndroid/app/src/main/res/menu/toolbar_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

@@ -4,6 +4,7 @@
     package="com.example.basicandroid">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BasicAndroid">
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".day2.Day2Activity"/>
         <activity android:name=".day3.Day3Activity"/>
+        <activity android:name=".day4.Day4Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".day2.ui.main.SampleFragmentActivity"/>
         <activity
             android:name=".day2.ItemDetailHostActivity"
