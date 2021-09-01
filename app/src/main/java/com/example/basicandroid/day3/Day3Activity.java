@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
+import com.example.basicandroid.day3.adapter.SampleCustomAdapterFragment;
 
 public class Day3Activity extends AppCompatActivity {
 
@@ -59,6 +60,13 @@ public class Day3Activity extends AppCompatActivity {
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.day3_container, GridLayoutFragment.newInstance())
+                .commitNow();
+    }
+
+    public void baseAdapter(View view){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.day3_container, SampleCustomAdapterFragment.newInstance())
                 .commitNow();
     }
 }
