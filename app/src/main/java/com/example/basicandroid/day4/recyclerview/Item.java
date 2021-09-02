@@ -31,6 +31,10 @@ public class Item {
             item.setDescription(getSaltName());
             datas.add(item);
         }
+        Item item = new Item();
+        item.setName("BCA");
+        item.setDescription("The Biggest Financial Company in Indonesia");
+        datas.add(item);
         return datas;
     }
 

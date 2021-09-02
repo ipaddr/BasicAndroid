@@ -54,9 +54,6 @@ public class Day4Activity extends AppCompatActivity {
             case R.id.action_show_snackbar:
                 showSnackBar();
                 return true;
-            case R.id.search:
-                Toast.makeText(this, "Search function need to be implemented", Toast.LENGTH_SHORT).show();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
