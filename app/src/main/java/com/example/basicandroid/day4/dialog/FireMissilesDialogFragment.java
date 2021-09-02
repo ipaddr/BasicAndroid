@@ -20,7 +20,7 @@ public class FireMissilesDialogFragment extends DialogFragment {
                 .setPositiveButton("FIRE", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(getActivity(), "Sending message...", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Missile was launched a second ago!", Toast.LENGTH_LONG).show();
                     }
                 })
                 .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {

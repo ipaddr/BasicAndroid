@@ -86,10 +86,7 @@ public class Day4Activity extends AppCompatActivity {
     }
 
     public void searchView(View view){
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.container_every_day, LinearLayoutFragment.newInstance())
-                .commitNow();
+        Toast.makeText(this, "Please check SearchView implementation at RecyclerView Section!", Toast.LENGTH_SHORT).show();
     }
 
     public void tabHost(View view){
@@ -108,7 +105,7 @@ public class Day4Activity extends AppCompatActivity {
 
     public void cardView(View view){
         final Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content).getRootView()
-                , "Please refer to Recycler view for card view implementation", Snackbar.LENGTH_INDEFINITE);
+                , "Please check CardView implementation at RecyclerView section!", Snackbar.LENGTH_INDEFINITE);
         snackbar.setAction("OK", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,7 +123,7 @@ public class Day4Activity extends AppCompatActivity {
     }
 
     public void actionBar(View view){
-        Toast.makeText(this, "ActionBar was implemented!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "ActionBar implemented via toolbar and menu inside this activity!", Toast.LENGTH_SHORT).show();
     }
 
     public void snackBar(View view){
@@ -136,7 +133,7 @@ public class Day4Activity extends AppCompatActivity {
     private void showSnackBar(){
         Fragment f = getSupportFragmentManager().findFragmentById(R.id.container_every_day);
         if (f instanceof Day4MainFragment){
-            final Snackbar snackbar = Snackbar.make(f.getView(), "Hello", Snackbar.LENGTH_INDEFINITE);
+            final Snackbar snackbar = Snackbar.make(f.getView(), "Hello I am SnackBar", Snackbar.LENGTH_INDEFINITE);
             snackbar.setAction("OK", new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
