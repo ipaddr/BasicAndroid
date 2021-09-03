@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Data">
+        <menu>
+            <item android:id="@+id/on" android:title="On" android:icon="@android:drawable/star_on"/>
+            <item android:id="@+id/off" android:title="Off" android:icon="@android:drawable/star_off"/>
+        </menu>
+    </item>
+    <group android:id="@+id/data">
+        <item android:id="@+id/search" android:icon="@android:drawable/ic_menu_search"
+            android:title="Search" app:actionViewClass="android.widget.SearchView"/>
+        <item android:id="@+id/add" android:icon="@android:drawable/btn_plus" android:title="Add"/>
+        <item android:id="@+id/delete" android:icon="@android:drawable/btn_minus" android:title="Delete"/>
+    </group>
+</menu>
