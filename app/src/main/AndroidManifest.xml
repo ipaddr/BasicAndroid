@@ -20,10 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".day2.Day2Activity"/>
-        <activity android:name=".day3.Day3Activity"/>
-        <activity android:name=".day4.Day4Activity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".day5.Day5Activity" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
         <activity android:name=".day2.ui.main.SampleFragmentActivity"/>
         <activity
             android:name=".day2.ItemDetailHostActivity"
@@ -32,6 +28,11 @@
             android:resizeableActivity="true"
             tools:targetApi="24">
         </activity>
+        <activity android:name=".day3.Day3Activity"/>
+        <activity android:name=".day4.Day4Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".day5.Day5Activity" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+        <activity android:name=".day6.Day6Activity" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
     </application>
 
 </manifest>
