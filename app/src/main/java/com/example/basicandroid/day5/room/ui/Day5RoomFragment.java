@@ -36,7 +36,6 @@ public class Day5RoomFragment extends Fragment {
     private FloatingActionButton fab;
     private RecyclerView recyclerView;
     private UserAdapter userAdapter;
-    private List<User> user;
 
     private final UserClickableCallback userClickableCallback = new UserClickableCallback() {
         @Override

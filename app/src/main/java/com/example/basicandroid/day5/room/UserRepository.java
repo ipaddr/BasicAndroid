@@ -30,6 +30,15 @@ public class UserRepository {
         });
     }
 
+    void update(User user){
+        AppDatabase.databaseWriteExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                userDao.update(user);
+            }
+        });
+    }
+
     void delete(User user){
         AppDatabase.databaseWriteExecutor.execute(new Runnable() {
             @Override

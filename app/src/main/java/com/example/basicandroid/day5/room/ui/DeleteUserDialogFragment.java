@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.basicandroid.R;
 import com.example.basicandroid.day5.room.User;
 import com.example.basicandroid.day5.room.UserViewModel;
 
@@ -71,9 +72,12 @@ public class DeleteUserDialogFragment extends DialogFragment {
                         deleteUser();
                     }
                 })
-                .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                .setNegativeButton("UPDATE", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        getActivity().getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container_every_day, UserUpdateFragment.newInstance(uid, firstName, lastName))
+                                .commitNow();
                     }
                 });
         return builder.create();
