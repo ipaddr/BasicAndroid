@@ -85,7 +85,6 @@ public class FileHelper {
                 e.printStackTrace();
             }
         }
-
         String contents = new String(bytes);
         return contents;
     }

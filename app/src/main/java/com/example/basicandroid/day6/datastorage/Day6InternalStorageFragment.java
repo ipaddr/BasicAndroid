@@ -103,7 +103,8 @@ public class Day6InternalStorageFragment extends Fragment {
 
     private void initFileCache(String fileName){
         try {
-            fileCache = File.createTempFile(fileName, null, requireActivity().getCacheDir());
+            fileCache = File.createTempFile(fileName, null,
+                    requireActivity().getCacheDir());
         } catch (IOException e) {
             e.printStackTrace();
         }
