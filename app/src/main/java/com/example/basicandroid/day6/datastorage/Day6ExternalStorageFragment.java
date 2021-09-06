@@ -64,8 +64,6 @@ public class Day6ExternalStorageFragment extends Fragment {
 
                 String persistence = valueView.getEditText().getText().toString();
                 FileHelper.writeFile(file, persistence);
-
-                FileHelper.writeFile(fileInDocumentDir, cache+ "\n" +persistence);
             }
         });
 
@@ -73,13 +71,15 @@ public class Day6ExternalStorageFragment extends Fragment {
         readButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String cache = FileHelper.readFile(fileCache);
-                String persistence = FileHelper.readFile(file);
+                if (file != null && fileCache != null) {
+                    String cache = FileHelper.readFile(fileCache);
+                    String persistence = FileHelper.readFile(file);
 
-                String text = "From Persistence File : "+ persistence + "\n"
-                        + "From Cache File : "+ cache;
+                    String text = "From Cache File : " + cache + "\n" +
+                            "From Persistence File : " + persistence;
 
-                displaySharedPreferenceData.setText(text);
+                    displaySharedPreferenceData.setText(text);
+                }
             }
         });
 
@@ -93,7 +93,6 @@ public class Day6ExternalStorageFragment extends Fragment {
         if (checkExternalStorageAvailability()){
             file = getFileByName(EXTERNAL_FILE_NAME);
             fileCache = getCacheFileByName(EXTERNAL_FILE_NAME_CACHE);
-            fileInDocumentDir = getSpecificPublicDirectory(requireActivity(), EXTERNAL_FILE_NAME_IN_DOCUMENT);
         }
     }
 
@@ -116,24 +115,6 @@ public class Day6ExternalStorageFragment extends Fragment {
     private File getCacheFileByName(String fileName){
         File externalCacheFile = new File(requireActivity().getExternalCacheDir(), fileName);
         return externalCacheFile;
-    }
-
-    @Nullable
-    File getAppSpecificStorageDir(Context context, String fileName) {
-        File file = new File(context.getExternalFilesDir(
-                Environment.DIRECTORY_DOCUMENTS), fileName);
-        if (file == null || !file.mkdirs()) {
-            Log.e(LOG_TAG, "Directory not created");
-        }
-        return file;
-    }
-
-    File getSpecificPublicDirectory(Context context, String fileName){
-        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), fileName);
-        if (file == null || !file.mkdirs()) {
-            Log.e(LOG_TAG, "Directory not created");
-        }
-        return file;
     }
     //endregion
 }

@@ -79,13 +79,15 @@ public class Day6InternalStorageFragment extends Fragment {
         readButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String persistence = FileHelper.readFileByFileName(requireActivity(), FILE_NAME);
-                String cache = FileHelper.readFile(getCacheFile(FILE_NAME_CACHE));
+                if (file != null && fileCache != null) {
+                    String persistence = FileHelper.readFileByFileName(requireActivity(), FILE_NAME);
+                    String cache = FileHelper.readFile(getCacheFile(FILE_NAME_CACHE));
 
-                String text = "From Persistence File : "+ persistence + "\n"
-                        + "From Cache File : "+ cache;
+                    String text = "From Cache File : " + cache + "\n" +
+                            "From Persistence File : " + persistence;
 
-                displaySharedPreferenceData.setText(text);
+                    displaySharedPreferenceData.setText(text);
+                }
             }
         });
 

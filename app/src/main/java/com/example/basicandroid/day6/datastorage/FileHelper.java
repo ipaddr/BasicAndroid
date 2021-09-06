@@ -46,7 +46,7 @@ public class FileHelper {
     public static String readFileByFileName(Context context, String fileName){
         FileInputStream fis = null;
         InputStreamReader isr = null;
-        StringBuilder sb = null;
+        StringBuilder sb = new StringBuilder();
         BufferedReader br = null;
         try {
             fis = context.openFileInput(fileName);
