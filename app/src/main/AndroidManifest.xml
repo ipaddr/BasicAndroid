@@ -38,6 +38,7 @@
         <activity android:name=".day6.notification.Day6PaymentCreditCardActivity"/>
         <service android:name=".day6.notification.TimerService" 
             android:exported="false"/>
+        <activity android:name=".day7.Day7Activity" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
     </application>
 
 </manifest>

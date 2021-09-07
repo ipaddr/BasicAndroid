@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
 import com.example.basicandroid.day6.datastorage.Day6ExternalStorageFragment;
 import com.example.basicandroid.day6.datastorage.Day6SharedPreferenceFragment;
@@ -15,7 +16,7 @@ import com.example.basicandroid.day6.datastorage.Day6InternalStorageFragment;
 import com.example.basicandroid.day6.notification.Day6NotificationAlarmFragment;
 import com.example.basicandroid.day6.notification.Day6NotificationFragment;
 
-public class Day6Activity extends AppCompatActivity {
+public class Day6Activity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

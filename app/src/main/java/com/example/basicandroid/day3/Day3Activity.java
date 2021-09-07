@@ -7,10 +7,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
 import com.example.basicandroid.day3.adapter.SampleCustomAdapterFragment;
 
-public class Day3Activity extends AppCompatActivity {
+public class Day3Activity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

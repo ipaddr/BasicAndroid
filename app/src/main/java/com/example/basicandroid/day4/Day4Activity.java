@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
 import com.example.basicandroid.day3.Day3MainFragment;
 import com.example.basicandroid.day3.GridLayoutFragment;
@@ -25,7 +26,7 @@ import com.example.basicandroid.day4.recyclerview.RecyclerViewFragment;
 import com.example.basicandroid.day4.tabhost.Day4TabHostFragment;
 import com.google.android.material.snackbar.Snackbar;
 
-public class Day4Activity extends AppCompatActivity {
+public class Day4Activity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -17,10 +17,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
 import com.example.basicandroid.day2.ui.main.SampleFragmentActivity;
 
-public class Day2Activity extends AppCompatActivity {
+public class Day2Activity extends BaseActivity {
 
     // Register the permissions callback, which handles the user's response to the
     // system permissions dialog. Save the return value, an instance of

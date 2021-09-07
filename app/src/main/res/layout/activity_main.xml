@@ -53,5 +53,12 @@
         android:text="Day 6"
         android:onClick="day6"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Day 7"
+        android:onClick="day7"/>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

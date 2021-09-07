@@ -9,12 +9,13 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
 import com.example.basicandroid.day5.room.UserViewModel;
 import com.example.basicandroid.day5.room.ui.Day5RoomFragment;
 import com.example.basicandroid.day5.room.ui.UserInputFragment;
 
-public class Day5Activity extends AppCompatActivity {
+public class Day5Activity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
