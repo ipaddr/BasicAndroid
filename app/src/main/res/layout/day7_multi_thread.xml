@@ -6,49 +6,58 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/thread_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Day 7"
-        app:layout_constraintBottom_toTopOf="@+id/button18"
+        android:text="Threa 1"
+        app:layout_constraintBottom_toTopOf="@+id/thread_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button18"
+    <TextView
+        android:id="@+id/thread_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="sessionmanagement"
-        android:text="Session Management"
-        app:layout_constraintBottom_toTopOf="@+id/button19"
+        android:text="Thread 2"
+        app:layout_constraintBottom_toTopOf="@+id/thread_three"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/thread_one" />
 
-    <Button
-        android:id="@+id/button19"
+    <TextView
+        android:id="@+id/thread_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="multithreading"
-        android:text="Multithreading"
-        app:layout_constraintBottom_toTopOf="@+id/button21"
+        android:text="Thread 3"
+        app:layout_constraintBottom_toTopOf="@+id/thread_four"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button18" />
+        app:layout_constraintTop_toBottomOf="@+id/thread_two" />
 
-    <Button
-        android:id="@+id/button21"
+    <TextView
+        android:id="@+id/thread_four"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="asynctask"
-        android:text="AsyncTask"
+        android:text="Thread 4"
+        app:layout_constraintBottom_toTopOf="@+id/start_worker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thread_three" />
+
+    <Button
+        android:id="@+id/start_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
+        app:layout_constraintTop_toBottomOf="@+id/thread_four" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

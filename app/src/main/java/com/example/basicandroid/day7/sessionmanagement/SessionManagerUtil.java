@@ -26,7 +26,8 @@ public class SessionManagerUtil {
         calendar.setTime(userLoggedTime);
         calendar.add(Calendar.SECOND, expiredIn);
         Date expiryTime = calendar.getTime();
-        SharedPreferences sharedPreferences = context.getSharedPreferences(SESSION_PREFERENCE, Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences =
+                context.getSharedPreferences(SESSION_PREFERENCE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putLong(SESSION_EXPIRY_TIME, expiryTime.getTime());
         editor.apply();
@@ -43,7 +44,8 @@ public class SessionManagerUtil {
     }
 
     public void storeUserToken(Context context, String token){
-        SharedPreferences.Editor editor = context.getSharedPreferences(SESSION_PREFERENCE, Context.MODE_PRIVATE).edit();
+        SharedPreferences.Editor editor =
+                context.getSharedPreferences(SESSION_PREFERENCE, Context.MODE_PRIVATE).edit();
         editor.putString(SESSION_TOKEN, token);
         editor.apply();
     }
@@ -58,7 +60,8 @@ public class SessionManagerUtil {
     }
 
     private void clearStoredData(Context context){
-        SharedPreferences.Editor editor = context.getSharedPreferences(SESSION_PREFERENCE, Context.MODE_PRIVATE).edit();
+        SharedPreferences.Editor editor =
+                context.getSharedPreferences(SESSION_PREFERENCE, Context.MODE_PRIVATE).edit();
         editor.clear();
         editor.apply();
     }

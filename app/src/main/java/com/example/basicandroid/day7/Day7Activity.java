@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
 import com.example.basicandroid.day6.Day6MainFragment;
+import com.example.basicandroid.day7.background.Day7AsyncTaskFragment;
+import com.example.basicandroid.day7.background.Day7MultiThreadFragment;
 import com.example.basicandroid.day7.sessionmanagement.Day7SessionManagementFragment;
 
 import java.util.concurrent.ExecutorService;
@@ -60,15 +62,11 @@ public class Day7Activity extends AppCompatActivity {
     }
 
     public void multithreading(View view){
-
-    }
-
-    public void handlermessagequeue(View view){
-
+        changeFragment(new Day7MultiThreadFragment());
     }
 
     public void asynctask(View view){
-
+        changeFragment(new Day7AsyncTaskFragment());
     }
 
 }
