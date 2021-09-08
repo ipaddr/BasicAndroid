@@ -118,10 +118,14 @@ public class Day7SessionManagementFragment extends Fragment {
         });
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     private String generateToken(String username, String password){
         String feeds = username+":"+password;
-        String token = Base64.getEncoder().encodeToString(feeds.getBytes());
+        String token = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            token = Base64.getEncoder().encodeToString(feeds.getBytes());
+        } else {
+            token = feeds;
+        }
         return token;
     }
 
