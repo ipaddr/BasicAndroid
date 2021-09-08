@@ -1,0 +1,37 @@
+[1mdiff --git a/app/src/main/java/com/example/basicandroid/BaseActivity.java b/app/src/main/java/com/example/basicandroid/BaseActivity.java[m
+[1mindex 2405e43..c761f4c 100644[m
+[1m--- a/app/src/main/java/com/example/basicandroid/BaseActivity.java[m
+[1m+++ b/app/src/main/java/com/example/basicandroid/BaseActivity.java[m
+[36m@@ -15,13 +15,13 @@[m [mpublic class BaseActivity extends AppCompatActivity {[m
+ [m
+     @Override[m
+     protected void onResume() {[m
+[31m-        boolean isAllowed = SessionManagerUtil.getInstance().isSessionActive(this, Calendar.getInstance().getTime());[m
+[32m+[m[32m        boolean isAllowed = SessionManagerUtil.getInstance()[m
+[32m+[m[32m                .isSessionActive(this, Calendar.getInstance().getTime());[m
+         if (!isAllowed) {[m
+             Intent intent = new Intent(this, Day7Activity.class);[m
+             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);[m
+             startActivity(intent);[m
+         }[m
+[31m-[m
+         super.onResume();[m
+     }[m
+ }[m
+[1mdiff --git a/app/src/main/java/com/example/basicandroid/day7/sessionmanagement/Day7SessionManagementFragment.java b/app/src/main/java/com/example/basicandroid/day7/sessionmanagement/Day7SessionManagementFragment.java[m
+[1mindex 70caa3c..8e9e9ae 100644[m
+[1m--- a/app/src/main/java/com/example/basicandroid/day7/sessionmanagement/Day7SessionManagementFragment.java[m
+[1m+++ b/app/src/main/java/com/example/basicandroid/day7/sessionmanagement/Day7SessionManagementFragment.java[m
+[36m@@ -127,8 +127,10 @@[m [mpublic class Day7SessionManagementFragment extends Fragment {[m
+ [m
+     @RequiresApi(api = Build.VERSION_CODES.O)[m
+     private void startAndStoreSession(){[m
+[31m-        SessionManagerUtil.getInstance().storeUserToken(requireActivity(), generateToken(username, password));[m
+[31m-        SessionManagerUtil.getInstance().startUserSession(requireActivity(), 30);[m
+[32m+[m[32m        SessionManagerUtil.getInstance()[m
+[32m+[m[32m                .storeUserToken(requireActivity(), generateToken(username, password));[m
+[32m+[m[32m        SessionManagerUtil.getInstance()[m
+[32m+[m[32m                .startUserSession(requireActivity(), 30);[m
+     }[m
+ [m
+     private void startMainActivity(){[m

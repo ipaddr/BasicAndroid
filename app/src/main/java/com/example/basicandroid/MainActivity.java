@@ -13,6 +13,7 @@ import com.example.basicandroid.day4.Day4Activity;
 import com.example.basicandroid.day5.Day5Activity;
 import com.example.basicandroid.day6.Day6Activity;
 import com.example.basicandroid.day7.Day7Activity;
+import com.example.basicandroid.day8.Day8Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void day7(View view){
         Intent intent = new Intent(MainActivity.this, Day7Activity.class);
+        startActivity(intent);
+    }
+
+    public void day8(View view){
+        Intent intent = new Intent(MainActivity.this, Day8Activity.class);
         startActivity(intent);
     }
 }

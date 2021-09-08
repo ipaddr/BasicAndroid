@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.basicandroid">
 
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
@@ -39,6 +40,7 @@
         <service android:name=".day6.notification.TimerService" 
             android:exported="false"/>
         <activity android:name=".day7.Day7Activity" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+        <activity android:name=".day8.Day8Activity" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
     </application>
 
 </manifest>
