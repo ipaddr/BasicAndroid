@@ -21,7 +21,7 @@ import java.util.concurrent.Executors;
 
 public class Day7MultiThreadFragment extends Fragment {
 
-    private Executor poolWorker = Executors.newFixedThreadPool(4);
+    private Executor poolWorker = Executors.newFixedThreadPool(2);
     private Executor mainThread = new Executor() {
         private Handler handler = new Handler(Looper.getMainLooper());
         @Override

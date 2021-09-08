@@ -1,0 +1,101 @@
+package com.example.basicandroid.day8.ui;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.basicandroid.R;
+import com.example.basicandroid.day8.UserViewModel;
+import com.example.basicandroid.day8.model.User;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.gson.Gson;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+public class Day8UserFragment extends Fragment {
+
+    private UserViewModel userViewModel;
+
+    private FloatingActionButton fab;
+    private RecyclerView recyclerView;
+    private UserAdapter userAdapter;
+    private ProgressBar pb;
+
+    private final UserClickableCallback userClickableCallback = new UserClickableCallback() {
+        @Override
+        public void onClick(View view, User user) {
+            Gson gson = new Gson();
+            String userString = gson.toJson(user);
+            Toast.makeText(requireActivity(), userString, Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    public static Day8UserFragment newInstance() {
+        return new Day8UserFragment();
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.day5_room_recyclerview, container, false);
+        pb = view.findViewById(R.id.rv_pb);
+        recyclerView = view.findViewById(R.id.roomRecyclerView);
+        userAdapter = new UserAdapter(userClickableCallback);
+        recyclerView.setAdapter(userAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        fab = view.findViewById(R.id.room_fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        userViewModel
+                .getRetrofitInstance()
+                .getAPI()
+                .getUsers()
+                .enqueue(new Callback<List<User>>() {
+                    @Override
+                    public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+                        pb.setVisibility(View.INVISIBLE);
+                        userAdapter.submitList(response.body());
+                    }
+                    @Override
+                    public void onFailure(Call<List<User>> call, Throwable t) {
+                        pb.setVisibility(View.INVISIBLE);
+                        Snackbar.make(view, "Error : "+ t.getMessage(), Snackbar.LENGTH_INDEFINITE).show();
+                    }
+                });
+    }
+
+}

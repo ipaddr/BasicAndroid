@@ -105,6 +105,7 @@ public class Day7SessionManagementFragment extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void run() {
+                // connect server
                 SystemClock.sleep(3000);
                 mainThread.execute(new Runnable() {
                     @Override
@@ -117,6 +118,7 @@ public class Day7SessionManagementFragment extends Fragment {
             }
         });
     }
+
 
     private String generateToken(String username, String password){
         String feeds = username+":"+password;

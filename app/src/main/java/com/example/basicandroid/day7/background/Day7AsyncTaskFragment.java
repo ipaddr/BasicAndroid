@@ -67,13 +67,13 @@ public class Day7AsyncTaskFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 DownloadTask task = new DownloadTask();
-                task.execute();
+                task.execute("http://file");
             }
         });
         return rootView;
     }
 
-    class DownloadTask extends AsyncTask<Void, Integer, String>{
+    class DownloadTask extends AsyncTask<String, Integer, String>{
 
         private int count = 0;
         @Override
@@ -83,7 +83,8 @@ public class Day7AsyncTaskFragment extends Fragment {
         }
 
         @Override
-        protected String doInBackground(Void... voids) {
+        protected String doInBackground(String... voids) {
+            String s = voids[0];
             SystemClock.sleep(2000);
             for (int i = 0; i < 10; i++) {
                 count = count + 10;
