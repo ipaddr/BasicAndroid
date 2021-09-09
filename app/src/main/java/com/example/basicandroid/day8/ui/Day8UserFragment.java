@@ -18,7 +18,6 @@ import com.example.basicandroid.R;
 import com.example.basicandroid.day8.UserViewModel;
 import com.example.basicandroid.day8.model.User;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 
 import java.util.List;
@@ -80,22 +79,10 @@ public class Day8UserFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        userViewModel
-                .getRetrofitInstance()
-                .getAPI()
-                .getUsers()
-                .enqueue(new Callback<List<User>>() {
-                    @Override
-                    public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-                        pb.setVisibility(View.INVISIBLE);
-                        userAdapter.submitList(response.body());
-                    }
-                    @Override
-                    public void onFailure(Call<List<User>> call, Throwable t) {
-                        pb.setVisibility(View.INVISIBLE);
-                        Snackbar.make(view, "Error : "+ t.getMessage(), Snackbar.LENGTH_INDEFINITE).show();
-                    }
-                });
+        userViewModel.getAllUsers().observe(getViewLifecycleOwner(), users -> {
+            pb.setVisibility(View.INVISIBLE);
+            userAdapter.submitList(users);
+        });
     }
 
 }
