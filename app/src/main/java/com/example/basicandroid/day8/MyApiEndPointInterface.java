@@ -1,5 +1,6 @@
 package com.example.basicandroid.day8;
 
+import com.example.basicandroid.day8.model.GuestResponse;
 import com.example.basicandroid.day8.model.User;
 import java.util.List;
 import retrofit2.Call;
@@ -16,5 +17,11 @@ public interface MyApiEndPointInterface {
 
     @GET("/users/{id}")
     Call<User> getUser(@Path("id") String id);
+
+
+    String BASE_URL_2 = "https://reqres.in";
+
+    @GET("/api/users")
+    Call<GuestResponse> getUsers2();
 
 }

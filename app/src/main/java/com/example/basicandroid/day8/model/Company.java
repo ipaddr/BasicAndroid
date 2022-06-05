@@ -16,7 +16,7 @@ public class Company {
     private String catchPhrase;
     @SerializedName("bs")
     @Expose
-    private String bs;
+    public String bs;
 
     public String getName() {
         return name;

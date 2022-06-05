@@ -9,7 +9,7 @@ class LooperThread extends Thread {
     public Handler mHandler;
 
     public void run() {
-        Looper.prepare();
+        Looper.getMainLooper();
 
         mHandler = new Handler() {
             public void handleMessage(Message msg) {

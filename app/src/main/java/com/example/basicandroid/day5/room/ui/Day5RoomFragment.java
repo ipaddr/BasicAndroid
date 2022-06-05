@@ -32,7 +32,6 @@ import java.util.List;
 public class Day5RoomFragment extends Fragment {
 
     private UserViewModel userViewModel;
-
     private FloatingActionButton fab;
     private RecyclerView recyclerView;
     private UserAdapter userAdapter;

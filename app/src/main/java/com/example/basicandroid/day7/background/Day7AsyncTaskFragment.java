@@ -89,7 +89,7 @@ public class Day7AsyncTaskFragment extends Fragment {
             for (int i = 0; i < 10; i++) {
                 count = count + 10;
                 publishProgress(count);
-                SystemClock.sleep(500);
+                SystemClock.sleep(50000);
             }
             return "Proses download sudah selesai sebesar : "+count+"%";
         }

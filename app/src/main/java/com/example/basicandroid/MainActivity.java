@@ -2,6 +2,7 @@ package com.example.basicandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -14,6 +15,13 @@ import com.example.basicandroid.day5.Day5Activity;
 import com.example.basicandroid.day6.Day6Activity;
 import com.example.basicandroid.day7.Day7Activity;
 import com.example.basicandroid.day8.Day8Activity;
+import com.example.basicandroid.day8.MyApiEndPointInterface;
+import com.example.basicandroid.day8.RetrofitInstance;
+import com.example.basicandroid.day8.model.GuestResponse;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +29,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        RetrofitInstance retrofitInstance = new RetrofitInstance(MyApiEndPointInterface.BASE_URL_2);
+        retrofitInstance.getAPI().getUsers2().enqueue(new Callback<GuestResponse>() {
+            @Override
+            public void onResponse(Call<GuestResponse> call, Response<GuestResponse> response) {
+                Log.d("","");
+            }
+
+            @Override
+            public void onFailure(Call<GuestResponse> call, Throwable t) {
+                Log.d("","");
+            }
+        });
+
     }
 
     public void day2(View view){

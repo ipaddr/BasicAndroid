@@ -131,7 +131,6 @@ public class Day7SessionManagementFragment extends Fragment {
         return token;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     private void startAndStoreSession(){
         SessionManagerUtil.getInstance()
                 .storeUserToken(requireActivity(), generateToken(username, password));
