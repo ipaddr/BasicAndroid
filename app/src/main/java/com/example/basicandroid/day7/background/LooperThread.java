@@ -1,4 +1,4 @@
-package com.example.basicandroid.day7;
+package com.example.basicandroid.day7.background;
 
 import android.os.Handler;
 import android.os.Looper;
