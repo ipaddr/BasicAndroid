@@ -1,4 +1,4 @@
-package com.example.basicandroid.day5;
+package com.example.basicandroid.day3.menu;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,7 +19,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
 
-public class Day5MenuFragment extends Fragment {
+public class Day3MenuFragment extends Fragment {
 
     private TextView contextualMenuMe;
     private TextView popupMenu;
@@ -64,8 +64,8 @@ public class Day5MenuFragment extends Fragment {
     };
     //endregion
 
-    public static Day5MenuFragment newInstance() {
-        return new Day5MenuFragment();
+    public static Day3MenuFragment newInstance() {
+        return new Day3MenuFragment();
     }
 
     @Override

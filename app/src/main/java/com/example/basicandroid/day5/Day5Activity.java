@@ -4,14 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
-import com.example.basicandroid.day5.room.UserViewModel;
+import com.example.basicandroid.day3.menu.Day3MainFragment;
 import com.example.basicandroid.day5.room.ui.Day5RoomFragment;
 import com.example.basicandroid.day5.room.ui.UserInputFragment;
 
@@ -27,7 +25,7 @@ public class Day5Activity extends BaseActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container_every_day, Day5MainFragment.newInstance())
+                    .replace(R.id.container_every_day, Day3MainFragment.newInstance())
                     .commitNow();
         }
     }
@@ -35,7 +33,7 @@ public class Day5Activity extends BaseActivity {
     @Override
     public void onBackPressed() {
         Fragment f = getSupportFragmentManager().findFragmentById(R.id.container_every_day);
-        if (f instanceof Day5MainFragment)
+        if (f instanceof Day3MainFragment)
             super.onBackPressed();
         else if(f instanceof UserInputFragment){
             getSupportFragmentManager().beginTransaction()
@@ -44,15 +42,9 @@ public class Day5Activity extends BaseActivity {
         }
         else{
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container_every_day, Day5MainFragment.newInstance())
+                    .replace(R.id.container_every_day, Day3MainFragment.newInstance())
                     .commitNow();
         }
-    }
-
-    public void menu(View view){
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container_every_day, Day5MenuFragment.newInstance())
-                .commitNow();
     }
 
     public void room(View view){

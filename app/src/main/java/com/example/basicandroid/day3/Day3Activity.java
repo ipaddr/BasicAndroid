@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
 import com.example.basicandroid.day3.adapter.SampleCustomAdapterFragment;
+import com.example.basicandroid.day3.menu.Day3MenuFragment;
 
 public class Day3Activity extends BaseActivity {
 
@@ -68,6 +68,12 @@ public class Day3Activity extends BaseActivity {
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.day3_container, SampleCustomAdapterFragment.newInstance())
+                .commitNow();
+    }
+
+    public void menu(View view){
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.day3_container, Day3MenuFragment.newInstance())
                 .commitNow();
     }
 }

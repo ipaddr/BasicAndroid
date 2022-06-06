@@ -1,4 +1,4 @@
-package com.example.basicandroid.day5;
+package com.example.basicandroid.day3.menu;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,11 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
-import com.example.basicandroid.day4.Day4MainFragment;
 
-public class Day5MainFragment extends Fragment {
-    public static Day5MainFragment newInstance() {
-        return new Day5MainFragment();
+public class Day3MainFragment extends Fragment {
+    public static Day3MainFragment newInstance() {
+        return new Day3MainFragment();
     }
 
     @Nullable
