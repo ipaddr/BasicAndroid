@@ -1,4 +1,4 @@
-package com.example.basicandroid.day7.background;
+package com.example.basicandroid.day4.background;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -85,11 +85,10 @@ public class Day7AsyncTaskFragment extends Fragment {
         @Override
         protected String doInBackground(String... voids) {
             String s = voids[0];
-            SystemClock.sleep(2000);
             for (int i = 0; i < 10; i++) {
                 count = count + 10;
                 publishProgress(count);
-                SystemClock.sleep(50000);
+                SystemClock.sleep(2000);
             }
             return "Proses download sudah selesai sebesar : "+count+"%";
         }

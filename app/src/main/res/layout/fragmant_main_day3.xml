@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <TextView
             android:layout_width="match_parent"
@@ -57,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/widget_margin"
             android:text="@string/constraint_layout"
-            android:onClick="constrantLayout"
+            android:onClick="constranitLayout"
             />
 
         <androidx.appcompat.widget.AppCompatButton

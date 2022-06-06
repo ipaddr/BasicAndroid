@@ -64,6 +64,13 @@ public class Day3Activity extends BaseActivity {
                 .commitNow();
     }
 
+    public void constranitLayout(View view){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.day3_container, ConstraintLayoutFragment.newInstance())
+                .commitNow();
+    }
+
     public void baseAdapter(View view){
         getSupportFragmentManager()
                 .beginTransaction()

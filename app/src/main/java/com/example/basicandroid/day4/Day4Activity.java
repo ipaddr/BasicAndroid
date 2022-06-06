@@ -21,6 +21,8 @@ import com.example.basicandroid.day3.LinearLayoutFragment;
 import com.example.basicandroid.day3.RelativeLayoutFragment;
 import com.example.basicandroid.day3.TableLayoutFragment;
 import com.example.basicandroid.day3.adapter.SampleCustomAdapterFragment;
+import com.example.basicandroid.day4.background.Day7AsyncTaskFragment;
+import com.example.basicandroid.day4.background.Day7MultiThreadFragment;
 import com.example.basicandroid.day4.dialog.Day4DialogFragment;
 import com.example.basicandroid.day4.recyclerview.RecyclerViewFragment;
 import com.example.basicandroid.day4.tabhost.Day4TabHostFragment;
@@ -143,5 +145,19 @@ public class Day4Activity extends BaseActivity {
             });
             snackbar.show();
         }
+    }
+
+    private void changeFragment(Fragment fragment){
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container_every_day, fragment)
+                .commitNow();
+    }
+
+    public void multithreading(View view){
+        changeFragment(new Day7MultiThreadFragment());
+    }
+
+    public void asynctask(View view){
+        changeFragment(new Day7AsyncTaskFragment());
     }
 }
