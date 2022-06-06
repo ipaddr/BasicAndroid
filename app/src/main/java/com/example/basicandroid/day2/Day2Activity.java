@@ -115,7 +115,7 @@ public class Day2Activity extends BaseActivity {
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
     }
 
-    public void startActivityWithFragment(View view){
+    public void exampleExplicitIntentToStartActivityWithFragment(View view){
         Intent intent = new Intent(this, SampleFragmentActivity.class);
         startActivity(intent);
     }

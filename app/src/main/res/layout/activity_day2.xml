@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:onClick="startActivityWithFragment"
+        android:onClick="exampleExplicitIntentToStartActivityWithFragment"
         android:text="Fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
