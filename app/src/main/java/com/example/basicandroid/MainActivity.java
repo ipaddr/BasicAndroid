@@ -15,9 +15,9 @@ import com.example.basicandroid.day5.Day5Activity;
 import com.example.basicandroid.day6.Day6Activity;
 import com.example.basicandroid.day7.Day7Activity;
 import com.example.basicandroid.day8.Day8Activity;
-import com.example.basicandroid.day8.MyApiEndPointInterface;
-import com.example.basicandroid.day8.RetrofitInstance;
-import com.example.basicandroid.day8.model.GuestResponse;
+import com.example.basicandroid.day8.network.retrofit.MyApiEndPointInterface;
+import com.example.basicandroid.day8.network.retrofit.RetrofitInstance;
+import com.example.basicandroid.day8.network.model.GuestResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;

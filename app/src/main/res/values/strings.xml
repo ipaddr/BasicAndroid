@@ -21,5 +21,7 @@
     <string name="grid_layout">Grid Layout</string>
     <string name="constraint_layout">Constraint Layout</string>
     <string name="base_adapter">Base Adapter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

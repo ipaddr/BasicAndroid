@@ -1,13 +1,8 @@
 package com.example.basicandroid;
 
-import android.content.Intent;
-import android.os.Bundle;
-
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.basicandroid.day7.Day7Activity;
-import com.example.basicandroid.day7.sessionmanagement.SessionManagerUtil;
+import com.example.basicandroid.day8.sessionmanagement.SessionManagerUtil;
 
 import java.util.Calendar;
 

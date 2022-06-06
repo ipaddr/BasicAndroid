@@ -10,21 +10,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Day 7"
-        app:layout_constraintBottom_toTopOf="@+id/button18"
+        app:layout_constraintBottom_toTopOf="@+id/session"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/session"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="room"
-        android:text="Room"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="session"
+        android:text="Session Management"
+        app:layout_constraintBottom_toTopOf="@+id/network"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="network"
+        android:text="Network"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session" />
 </androidx.constraintlayout.widget.ConstraintLayout>

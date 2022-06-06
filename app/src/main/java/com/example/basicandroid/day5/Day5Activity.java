@@ -20,8 +20,6 @@ import com.example.basicandroid.day4.Day4NestedScrollViewFragment;
 import com.example.basicandroid.day4.Day4WebViewFragment;
 import com.example.basicandroid.day4.recyclerview.RecyclerViewFragment;
 import com.example.basicandroid.day4.tabhost.Day4TabHostFragment;
-import com.example.basicandroid.day5.room.ui.Day5RoomFragment;
-import com.example.basicandroid.day5.room.ui.UserInputFragment;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Day5Activity extends BaseActivity {
@@ -44,16 +42,11 @@ public class Day5Activity extends BaseActivity {
     @Override
     public void onBackPressed() {
         Fragment f = getSupportFragmentManager().findFragmentById(R.id.container_every_day);
-        if (f instanceof Day3MainFragment)
+        if (f instanceof Day5MainFragment)
             super.onBackPressed();
-        else if(f instanceof UserInputFragment){
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container_every_day, Day5RoomFragment.newInstance())
-                    .commitNow();
-        }
         else{
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container_every_day, Day3MainFragment.newInstance())
+                    .replace(R.id.container_every_day, Day5MainFragment.newInstance())
                     .commitNow();
         }
     }

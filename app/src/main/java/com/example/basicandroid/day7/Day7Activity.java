@@ -1,7 +1,6 @@
 package com.example.basicandroid.day7;
 
 import android.os.Bundle;
-import android.os.Looper;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -10,12 +9,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
-import com.example.basicandroid.day4.background.Day7AsyncTaskFragment;
 import com.example.basicandroid.day4.background.Day7MultiThreadFragment;
-import com.example.basicandroid.day7.sessionmanagement.Day7SessionManagementFragment;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import com.example.basicandroid.day7.room.ui.RoomFragment;
+import com.example.basicandroid.day7.room.ui.UserInputFragment;
+import com.example.basicandroid.day8.sessionmanagement.SessionManagementFragment;
 
 public class Day7Activity extends AppCompatActivity {
 
@@ -26,10 +23,6 @@ public class Day7Activity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        ExecutorService executorService = Executors.newFixedThreadPool(4);
-
-        Looper looper;
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -43,6 +36,11 @@ public class Day7Activity extends AppCompatActivity {
         Fragment f = getSupportFragmentManager().findFragmentById(R.id.container_every_day);
         if (f instanceof Day7MainFragment)
             super.onBackPressed();
+        else if(f instanceof UserInputFragment){
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container_every_day, Day7MainFragment.newInstance())
+                    .commitNow();
+        }
         else{
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container_every_day, Day7MainFragment.newInstance())
@@ -56,16 +54,8 @@ public class Day7Activity extends AppCompatActivity {
                 .commitNow();
     }
 
-    public void sessionmanagement(View view){
-        changeFragment(new Day7SessionManagementFragment());
-    }
-
-    public void multithreading(View view){
-        changeFragment(new Day7MultiThreadFragment());
-    }
-
-    public void asynctask(View view){
-        changeFragment(new Day7AsyncTaskFragment());
+    public void room(View view){
+        changeFragment(new RoomFragment());
     }
 
 }
