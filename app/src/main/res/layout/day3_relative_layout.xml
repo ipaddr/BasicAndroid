@@ -9,6 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/widget_margin"
         android:hint="@string/username"
+        android:inputType="text"
+        android:autofillHints="@string/username"
         android:layout_alignParentTop="true"/>
 
     <EditText
@@ -17,6 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/widget_margin"
         android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="@string/password"
         android:layout_below="@id/username"/>
 
     <androidx.appcompat.widget.AppCompatButton
