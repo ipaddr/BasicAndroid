@@ -1,4 +1,4 @@
-package com.example.basicandroid.day4.recyclerview;
+package com.example.basicandroid.day5.recyclerview;
 
 import java.util.ArrayList;
 import java.util.Random;

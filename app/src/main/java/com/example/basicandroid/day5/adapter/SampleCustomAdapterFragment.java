@@ -1,4 +1,4 @@
-package com.example.basicandroid.day3.adapter;
+package com.example.basicandroid.day5.adapter;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
-import com.example.basicandroid.day3.Day3MainFragment;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.example.basicandroid.day4;
+package com.example.basicandroid.day5;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,13 +12,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.basicandroid.R;
-import com.example.basicandroid.day4.recyclerview.Item;
-import com.example.basicandroid.day4.recyclerview.ItemAdapter;
-import com.example.basicandroid.day4.recyclerview.RecyclerViewFragment;
+import com.example.basicandroid.day5.recyclerview.Item;
+import com.example.basicandroid.day5.recyclerview.ItemAdapter;
 
-public class Day4SearchViewFragment extends Fragment {
-    public static Day4SearchViewFragment newInstance() {
-        return new Day4SearchViewFragment();
+public class Day5SearchViewFragment extends Fragment {
+    public static Day5SearchViewFragment newInstance() {
+        return new Day5SearchViewFragment();
     }
 
     @Nullable

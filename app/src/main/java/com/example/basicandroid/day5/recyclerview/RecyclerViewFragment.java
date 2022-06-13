@@ -1,4 +1,4 @@
-package com.example.basicandroid.day4.recyclerview;
+package com.example.basicandroid.day5.recyclerview;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -18,9 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.basicandroid.R;
-import com.example.basicandroid.day3.LinearLayoutFragment;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class RecyclerViewFragment extends Fragment {

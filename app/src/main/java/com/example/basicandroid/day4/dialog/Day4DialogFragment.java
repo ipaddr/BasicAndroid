@@ -12,7 +12,6 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
-import com.example.basicandroid.day4.Day4NestedScrollViewFragment;
 
 public class Day4DialogFragment extends Fragment {
 

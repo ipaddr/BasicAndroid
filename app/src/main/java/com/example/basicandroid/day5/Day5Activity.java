@@ -14,12 +14,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
-import com.example.basicandroid.day3.adapter.SampleCustomAdapterFragment;
+import com.example.basicandroid.day5.adapter.SampleCustomAdapterFragment;
 import com.example.basicandroid.day3.menu.Day3MainFragment;
-import com.example.basicandroid.day4.Day4NestedScrollViewFragment;
-import com.example.basicandroid.day4.Day4WebViewFragment;
-import com.example.basicandroid.day4.recyclerview.RecyclerViewFragment;
-import com.example.basicandroid.day4.tabhost.Day4TabHostFragment;
+import com.example.basicandroid.day5.recyclerview.RecyclerViewFragment;
+import com.example.basicandroid.day5.tabhost.Day5TabHostFragment;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Day5Activity extends BaseActivity {
@@ -85,7 +83,7 @@ public class Day5Activity extends BaseActivity {
     public void webView(View view){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container_every_day, Day4WebViewFragment.newInstance())
+                .replace(R.id.container_every_day, Day5WebViewFragment.newInstance())
                 .commitNow();
     }
 
@@ -96,14 +94,14 @@ public class Day5Activity extends BaseActivity {
     public void tabHost(View view){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container_every_day, Day4TabHostFragment.newInstance())
+                .replace(R.id.container_every_day, Day5TabHostFragment.newInstance())
                 .commitNow();
     }
 
     public void nestedScrollView(View view){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container_every_day, Day4NestedScrollViewFragment.newInstance())
+                .replace(R.id.container_every_day, Day5NestedScrollViewFragment.newInstance())
                 .commitNow();
     }
 

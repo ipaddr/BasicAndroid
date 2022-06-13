@@ -1,4 +1,4 @@
-package com.example.basicandroid.day4.tabhost;
+package com.example.basicandroid.day5.tabhost;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.R;
 
-public class Day4TabHostFragmentContent extends Fragment {
+public class Day5TabHostFragmentContent extends Fragment {
 
     private static final String ARG_PAGE = "ARG_PAGE";
     private int mPage;
 
-    public static Day4TabHostFragmentContent newInstance(int page){
+    public static Day5TabHostFragmentContent newInstance(int page){
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
-        Day4TabHostFragmentContent day4TabHostFragmentContent = new Day4TabHostFragmentContent();
-        day4TabHostFragmentContent.setArguments(args);
-        return day4TabHostFragmentContent;
+        Day5TabHostFragmentContent day5TabHostFragmentContent = new Day5TabHostFragmentContent();
+        day5TabHostFragmentContent.setArguments(args);
+        return day5TabHostFragmentContent;
     }
 
     @Override

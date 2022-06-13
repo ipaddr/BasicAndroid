@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
-import com.example.basicandroid.day3.adapter.SampleCustomAdapterFragment;
+import com.example.basicandroid.day5.adapter.SampleCustomAdapterFragment;
 import com.example.basicandroid.day3.menu.Day3MenuFragment;
 
 public class Day3Activity extends BaseActivity {

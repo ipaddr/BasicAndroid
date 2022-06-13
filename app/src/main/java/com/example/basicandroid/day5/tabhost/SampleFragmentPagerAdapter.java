@@ -1,4 +1,4 @@
-package com.example.basicandroid.day4.tabhost;
+package com.example.basicandroid.day5.tabhost;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -16,7 +16,7 @@ public class SampleFragmentPagerAdapter extends FragmentStateAdapter{
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        return Day4TabHostFragmentContent.newInstance(position);
+        return Day5TabHostFragmentContent.newInstance(position);
     }
 
     @Override

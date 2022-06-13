@@ -9,23 +9,18 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import com.example.basicandroid.BaseActivity;
 import com.example.basicandroid.R;
-import com.example.basicandroid.day3.Day3MainFragment;
-import com.example.basicandroid.day3.GridLayoutFragment;
-import com.example.basicandroid.day3.LinearLayoutFragment;
-import com.example.basicandroid.day3.RelativeLayoutFragment;
-import com.example.basicandroid.day3.TableLayoutFragment;
-import com.example.basicandroid.day3.adapter.SampleCustomAdapterFragment;
 import com.example.basicandroid.day4.background.Day7AsyncTaskFragment;
 import com.example.basicandroid.day4.background.Day7MultiThreadFragment;
 import com.example.basicandroid.day4.dialog.Day4DialogFragment;
-import com.example.basicandroid.day4.recyclerview.RecyclerViewFragment;
-import com.example.basicandroid.day4.tabhost.Day4TabHostFragment;
+import com.example.basicandroid.day5.Day5NestedScrollViewFragment;
+import com.example.basicandroid.day5.Day5WebViewFragment;
+import com.example.basicandroid.day5.recyclerview.RecyclerViewFragment;
+import com.example.basicandroid.day5.tabhost.Day5TabHostFragment;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Day4Activity extends BaseActivity {
@@ -84,7 +79,7 @@ public class Day4Activity extends BaseActivity {
     public void webView(View view){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container_every_day, Day4WebViewFragment.newInstance())
+                .replace(R.id.container_every_day, Day5WebViewFragment.newInstance())
                 .commitNow();
     }
 
@@ -95,14 +90,14 @@ public class Day4Activity extends BaseActivity {
     public void tabHost(View view){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container_every_day, Day4TabHostFragment.newInstance())
+                .replace(R.id.container_every_day, Day5TabHostFragment.newInstance())
                 .commitNow();
     }
 
     public void nestedScrollView(View view){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container_every_day, Day4NestedScrollViewFragment.newInstance())
+                .replace(R.id.container_every_day, Day5NestedScrollViewFragment.newInstance())
                 .commitNow();
     }
 

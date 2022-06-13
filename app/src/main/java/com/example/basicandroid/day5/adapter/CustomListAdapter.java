@@ -1,4 +1,4 @@
-package com.example.basicandroid.day3.adapter;
+package com.example.basicandroid.day5.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
