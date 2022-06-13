@@ -22,4 +22,5 @@ public class TableLayoutFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.day3_table_layout, container, false);
     }
+
 }

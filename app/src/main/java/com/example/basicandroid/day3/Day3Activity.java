@@ -2,6 +2,8 @@ package com.example.basicandroid.day3;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TableLayout;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -82,5 +84,22 @@ public class Day3Activity extends BaseActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.day3_container, Day3MenuFragment.newInstance())
                 .commitNow();
+    }
+
+    private boolean tableFlag = false;
+    public void tableCollapse(View view){
+        TableLayout tableLayout = findViewById(R.id.tabLayout);
+        Button btn = findViewById(R.id.tablebutton);
+
+        tableLayout.setColumnCollapsed(3, tableFlag);
+        tableLayout.setColumnCollapsed(4, tableFlag);
+
+        if (tableFlag){
+            tableFlag = false;
+            btn.setText("Show Detail");
+        } else {
+            tableFlag = true;
+            btn.setText("Hide Detail");
+        }
     }
 }

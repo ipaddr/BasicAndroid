@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout
+    android:id="@+id/tablelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="*">
+    android:stretchColumns="*"
+    android:collapseColumns="3,4"
+    tools:context=".day3.Day3Activity">
 
     <TableRow
         android:background="@drawable/border">
@@ -37,6 +42,12 @@
             android:background="@drawable/border"
             android:text="@string/text2"
             android:textSize="@dimen/android_icon_text_size"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/tablebutton"
+            android:onClick="tableCollapse"
+            />
     </TableRow>
 
 </TableLayout>
